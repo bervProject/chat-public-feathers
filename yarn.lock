@@ -184,16 +184,17 @@
     grant-profile "^0.0.4"
     lodash "^4.17.15"
 
-"@feathersjs/authentication@^4.3.0", "@feathersjs/authentication@^4.3.0-pre.3":
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/@feathersjs/authentication/-/authentication-4.3.0.tgz#4b1c2ddb4b9c8013b2c37dd91e7a45d31b1ee83c"
-  integrity sha512-/VMw04isM7XprZekRuxcFjQrubh43RNzMU8A4+3N19KisHCFd+WuGRBODxXHLkeLAnOldw3CtAY1xCvvFCHtaw==
+"@feathersjs/authentication@^4.3.0", "@feathersjs/authentication@^4.3.1":
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/@feathersjs/authentication/-/authentication-4.3.1.tgz#24a6417624f1ce801e36af9ab849679ecfc3af9a"
+  integrity sha512-CnHZfPjfqHMyzQQFwZ2yKSrx5BXdH5p0kHSUieMdNoh2T4uWCFMbL08ORL73pTIuMjmXyvHn6nBdCBxtP2BbnA==
   dependencies:
-    "@feathersjs/errors" "^4.3.0"
-    "@feathersjs/transport-commons" "^4.3.0"
+    "@feathersjs/errors" "^4.3.1"
+    "@feathersjs/transport-commons" "^4.3.1"
     debug "^4.1.1"
     jsonwebtoken "^8.5.1"
     lodash "^4.17.15"
+    long-timeout "^0.1.1"
     uuid "^3.3.2"
 
 "@feathersjs/commons@^4.0.0", "@feathersjs/commons@^4.0.0-pre.5":
@@ -221,17 +222,10 @@
   dependencies:
     debug "^4.0.0"
 
-"@feathersjs/errors@^4.0.0-pre.4", "@feathersjs/errors@^4.0.0-pre.5":
-  version "4.0.0-pre.5"
-  resolved "https://registry.yarnpkg.com/@feathersjs/errors/-/errors-4.0.0-pre.5.tgz#9d9baab8e1467ca92c980659472c66f8ae7abd11"
-  integrity sha512-sLKAylx2dSScbLPdFNa+hBh+fRljYpNFdaewo6Eni5si9BscqiExVMzs3K3osQ5ue18xCMTBrdsmJNDIE7+gYw==
-  dependencies:
-    debug "^4.1.1"
-
-"@feathersjs/errors@^4.3.0", "@feathersjs/errors@^4.3.0-pre.3":
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/@feathersjs/errors/-/errors-4.3.0.tgz#7ac89396ef868061b6a1d9b0f9005f6403cafbf6"
-  integrity sha512-tOwBpJmLYy0Fq/Dp8Y3dO2/B6ojfqSrTFXixTYH2qBR3aFS/U0VzhoyEa1O+/FcJRDqgW54HNCyy520zqYB/pw==
+"@feathersjs/errors@^4.0.0-pre.4", "@feathersjs/errors@^4.0.0-pre.5", "@feathersjs/errors@^4.3.0", "@feathersjs/errors@^4.3.0-pre.3", "@feathersjs/errors@^4.3.1":
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/@feathersjs/errors/-/errors-4.3.1.tgz#2ce9004c447803b05aa85bc33f0189373c31163b"
+  integrity sha512-1egwUeloAGEp61lE50SRM9Hlkz0W5l/afEO5YOMF49rNzY4b8SEOcGsxb056M+lMRaWlH8bD4nZ0B4PD/09NoQ==
   dependencies:
     debug "^4.1.1"
 
@@ -3609,6 +3603,11 @@ logform@^2.1.1:
     ms "^2.1.1"
     triple-beam "^1.3.0"
 
+long-timeout@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/long-timeout/-/long-timeout-0.1.1.tgz#9721d788b47e0bcb5a24c2e2bee1a0da55dab514"
+  integrity sha1-lyHXiLR+C8taJMLivuGg2lXatRQ=
+
 loose-envify@^1.0.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
@@ -5485,15 +5484,10 @@ utils-merge@1.0.1:
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
-uuid@^3.2.1:
+uuid@^3.2.1, uuid@^3.3.2:
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.3.tgz#4568f0216e78760ee1dbf3a4d2cf53e224112866"
   integrity sha512-pW0No1RGHgzlpHJO1nsVrHKpOEIxkGg1xB+v0ZmdNH5OAeAwzAVrCnI2/6Mtx+Uys6iaylxa+D3g4j63IKKjSQ==
-
-uuid@^3.3.2:
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
-  integrity sha512-yXJmeNaw3DnnKAOKJE51sL/ZaYfWJRl1pK9dr19YFCu0ObS231AB1/LbqTKRAQ5kw8A90rA6fr4riOUpTZvQZA==
 
 v8-compile-cache@^2.0.3:
   version "2.0.3"
