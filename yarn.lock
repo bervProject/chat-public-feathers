@@ -222,14 +222,14 @@
   dependencies:
     debug "^4.0.0"
 
-"@feathersjs/errors@^4.0.0-pre.4", "@feathersjs/errors@^4.0.0-pre.5", "@feathersjs/errors@^4.3.0-pre.3", "@feathersjs/errors@^4.3.2", "@feathersjs/errors@^4.3.3":
+"@feathersjs/errors@^4.0.0-pre.4", "@feathersjs/errors@^4.0.0-pre.5", "@feathersjs/errors@^4.3.0-pre.3", "@feathersjs/errors@^4.3.3":
   version "4.3.3"
   resolved "https://registry.yarnpkg.com/@feathersjs/errors/-/errors-4.3.3.tgz#4fc2956013e3599999fd8a14d5b61deb61a21476"
   integrity sha512-vqW6TDZIj7x77qenghGrWVhURN/SRYg9DjnE9aWoR4TPv9z+w3UzDl5luUW/KhHa7+2wh/TDGIdfUF5PTv8Mpg==
   dependencies:
     debug "^4.1.1"
 
-"@feathersjs/express@^4.3.2", "@feathersjs/express@^4.3.3":
+"@feathersjs/express@^4.3.3":
   version "4.3.3"
   resolved "https://registry.yarnpkg.com/@feathersjs/express/-/express-4.3.3.tgz#c8e57ed7a900d2ba4f43c08fe642eab2c53af5e4"
   integrity sha512-ad37G2X+GimDuH7E3tOMi+u1szlK9xrmgfvoQXKyHosAxtkq2i2eq9mv1IfuKSyU85Y7DT2KlUE+5ostUBjTWg==
@@ -1742,10 +1742,10 @@ eslint-visitor-keys@^1.0.0, eslint-visitor-keys@^1.1.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.1.0.tgz#e2a82cea84ff246ad6fb57f9bde5b46621459ec2"
   integrity sha512-8y9YjtM1JBJU/A9Kc+SbaOV4y29sSWckBwMHa+FGtVj5gN/sbnKDf6xJUl+8g7FAij9LVaP8C24DUiH/f/2Z9A==
 
-eslint@^6.4.0:
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-6.4.0.tgz#5aa9227c3fbe921982b2eda94ba0d7fae858611a"
-  integrity sha512-WTVEzK3lSFoXUovDHEbkJqCVPEPwbhCq4trDktNI6ygs7aO41d4cDT0JFAT5MivzZeVLWlg7vHL+bgrQv/t3vA==
+eslint@^6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-6.5.0.tgz#304623eec903969dd5c9f2d61c6ce3d6ecec8750"
+  integrity sha512-IIbSW+vKOqMatPmS9ayyku4tvWxHY2iricSRtOz6+ZA5IPRlgXzEL0u/j6dr4eha0ugmhMwDTqxtmNu3kj9O4w==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.10.0"
