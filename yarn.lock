@@ -336,17 +336,7 @@
     long-timeout "^0.1.1"
     uuid "^3.4.0"
 
-"@feathersjs/commons@^4.3.0":
-  version "4.4.3"
-  resolved "https://registry.yarnpkg.com/@feathersjs/commons/-/commons-4.4.3.tgz#5c76109128f1c90fb3dad7e961dc3e54667688d8"
-  integrity sha512-hPIvq9V3iEYvvml3fz8HN+rP26cWX+REOdf23ZfW8S213SEmH9sYIzx1TvZ7c/t2/mj5nPJkWk+vF3IoHUadng==
-
-"@feathersjs/commons@^4.5.0":
-  version "4.5.0"
-  resolved "https://registry.npmjs.org/@feathersjs/commons/-/commons-4.5.0.tgz#955c3aa234559cf4c9e172c131032b7f8d48830f"
-  integrity sha512-B3wyBath21RozzC9jmUXJjgt4kSdfzmcdNFsKoL+0W6sv6dIBPzOddIb+NI97CEBSRVpJmv4NUjh32OzkPIrGw==
-
-"@feathersjs/commons@^4.5.1":
+"@feathersjs/commons@^4.3.0", "@feathersjs/commons@^4.5.1":
   version "4.5.1"
   resolved "https://registry.yarnpkg.com/@feathersjs/commons/-/commons-4.5.1.tgz#cd18cd9c49f9b06994c285629d97bc0dc271b32a"
   integrity sha512-wSanrV1Tvqf4U8PE4bx+gEdLT0cCuusuoVOvyK4uOlTIOgT85qJMw9MBa99jF7BFF022EzHrpo0CjzwqcMBMIA==
@@ -374,13 +364,13 @@
   dependencies:
     debug "^4.1.1"
 
-"@feathersjs/express@^4.5.0":
-  version "4.5.0"
-  resolved "https://registry.npmjs.org/@feathersjs/express/-/express-4.5.0.tgz#565a11341e4c39a0c04f10700c6d9b3908c84ef1"
-  integrity sha512-lDeejhJJTHwprbESfn+gVxNmvFfVk973T2a8mRr+QzJQaYZmv/1/u8BiZTYIniBerWuAWoJP+h9DlIbcz3MlAg==
+"@feathersjs/express@^4.5.0", "@feathersjs/express@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@feathersjs/express/-/express-4.5.1.tgz#d505836792a17bf7cd1a6019e78a2137c36c8d18"
+  integrity sha512-qpJp7GzW0PKBQy0dUtj+Gf2vj+uAoKTgXl9P3Pc566LhBT5fy5HifUvS3bONdYY6Is5VtL1Gx2lMgpuEI7UVEg==
   dependencies:
-    "@feathersjs/commons" "^4.5.0"
-    "@feathersjs/errors" "^4.5.0"
+    "@feathersjs/commons" "^4.5.1"
+    "@feathersjs/errors" "^4.5.1"
     "@types/express" "^4.17.2"
     debug "^4.1.1"
     express "^4.17.1"
