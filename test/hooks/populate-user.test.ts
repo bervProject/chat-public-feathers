@@ -1,5 +1,5 @@
-const feathers = require('@feathersjs/feathers');
-const populateUser = require('../../src/hooks/populate-user');
+import feathers from '@feathersjs/feathers';
+import populateUser from '../../src/hooks/populate-user';
 
 describe('\'populate-user\' hook', () => {
   let app;
@@ -8,8 +8,14 @@ describe('\'populate-user\' hook', () => {
     app = feathers();
 
     app.use('/dummy', {
-      async get(id) {
-        return { id };
+      async get(id: any) {
+        return { id, userId: 100 };
+      }
+    });
+
+    app.use('/users', {
+      async get(id: any) {
+        return { id, email: 'test@test.com' }
       }
     });
 
@@ -21,6 +27,6 @@ describe('\'populate-user\' hook', () => {
   it('runs the hook', async () => {
     expect.assertions(1);
     const result = await app.service('dummy').get('test');
-    expect(result).toEqual({ id: 'test' });
+    expect(result).toHaveProperty('userId');
   });
 });

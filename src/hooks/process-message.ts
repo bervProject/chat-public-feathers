@@ -1,12 +1,13 @@
 // Use this hook to manipulate incoming or outgoing data.
 // For more information on hooks see: http://docs.feathersjs.com/api/hooks.html
+import { HookContext, Hook } from '@feathersjs/feathers';
 
-module.exports = function (options = {}) { // eslint-disable-line no-unused-vars
-  return async context => {
+export default function (options = {}): Hook { // eslint-disable-line no-unused-vars
+  return async (context: HookContext) => {
     const { data } = context;
 
     // Throw an error if we didn't get a text
-    if(!data.text) {
+    if (!data.text) {
       throw new Error('A message must have a text');
     }
 
