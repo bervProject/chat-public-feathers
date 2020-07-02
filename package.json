@@ -47,7 +47,7 @@
     "helmet": "^3.23.3",
     "nedb": "^1.8.0",
     "serve-favicon": "^2.5.0",
-    "typescript": "^3.9.5",
+    "typescript": "^3.9.6",
     "uuid": "^8.2.0",
     "winston": "^3.3.3"
   },
