@@ -60,7 +60,7 @@
     "@types/jest": "^26.0.4",
     "@types/jsonwebtoken": "^8.5.0",
     "@types/mime-types": "^2.1.0",
-    "@types/nedb": "^1.8.9",
+    "@types/nedb": "^1.8.10",
     "@types/serve-favicon": "^2.5.0",
     "@types/uuid": "^8.0.0",
     "@types/validator": "^13.1.0",
