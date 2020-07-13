@@ -300,17 +300,17 @@
     lodash.pick "^4.4.0"
     passport-jwt "^4.0.0"
 
-"@feathersjs/authentication-local@^4.5.3":
-  version "4.5.4"
-  resolved "https://registry.npmjs.org/@feathersjs/authentication-local/-/authentication-local-4.5.4.tgz#95d04b04134b8f7eb10eaf2d6257c86a6492bfc2"
-  integrity sha512-ji+Ai33rMT7xsS7mEsFZe/ICb8mR6YYnr0vz7bEGDoyWbGt/K/A+UeLKKMfcAyF+37RgiZ3386pIboR+IHlqfw==
+"@feathersjs/authentication-local@^4.5.6":
+  version "4.5.6"
+  resolved "https://registry.yarnpkg.com/@feathersjs/authentication-local/-/authentication-local-4.5.6.tgz#1a9d05bb66e257ccdb3e2bb93caf28ee2af2918b"
+  integrity sha512-h4UOMR3Ja0vRjhM42Fa28g4n/91GYfaqDghOE6241nC/BPyejwi9FlRBO1ihxNKdKoGkKmsss+KsnfHfM0CzHg==
   dependencies:
-    "@feathersjs/authentication" "^4.5.3"
-    "@feathersjs/errors" "^4.5.3"
-    "@feathersjs/feathers" "^4.5.3"
+    "@feathersjs/authentication" "^4.5.6"
+    "@feathersjs/errors" "^4.5.5"
+    "@feathersjs/feathers" "^4.5.5"
     bcryptjs "^2.4.3"
     debug "^4.1.1"
-    lodash "^4.17.15"
+    lodash "^4.17.19"
 
 "@feathersjs/authentication-oauth@^4.5.6":
   version "4.5.6"
@@ -327,7 +327,7 @@
     grant-profile "^0.0.11"
     lodash "^4.17.19"
 
-"@feathersjs/authentication@^4.5.3", "@feathersjs/authentication@^4.5.6":
+"@feathersjs/authentication@^4.5.6":
   version "4.5.6"
   resolved "https://registry.yarnpkg.com/@feathersjs/authentication/-/authentication-4.5.6.tgz#0f87d42d445afaf69197ddfb701d81ffd0ba4729"
   integrity sha512-CWjpQtfPlbJ70oUu/UTVo6+TE5DNmmxcJSVX/cdVmn7cSzRzZ8MVUl/uVsxYPiRMSG0+9aTuo3ZuEf5qTVH4Xw==
@@ -410,17 +410,6 @@
     uberproto "^2.0.6"
 
 "@feathersjs/transport-commons@^4.5.3", "@feathersjs/transport-commons@^4.5.5":
-  version "4.5.5"
-  resolved "https://registry.yarnpkg.com/@feathersjs/transport-commons/-/transport-commons-4.5.5.tgz#08327177948b9d53bc54ac2f52905b4eea7d90e5"
-  integrity sha512-vCe2daomT7fv1hUDBZEhKWvGC33AdjOcDCZvT2Nu49DNjXTVUN+MzFYDB/ekzXd4A849aI2uurvtwQApWKX1NQ==
-  dependencies:
-    "@feathersjs/commons" "^4.5.5"
-    "@feathersjs/errors" "^4.5.5"
-    debug "^4.1.1"
-    lodash "^4.17.19"
-    radix-router "^3.0.1"
-
-"@feathersjs/transport-commons@^4.5.5":
   version "4.5.5"
   resolved "https://registry.yarnpkg.com/@feathersjs/transport-commons/-/transport-commons-4.5.5.tgz#08327177948b9d53bc54ac2f52905b4eea7d90e5"
   integrity sha512-vCe2daomT7fv1hUDBZEhKWvGC33AdjOcDCZvT2Nu49DNjXTVUN+MzFYDB/ekzXd4A849aI2uurvtwQApWKX1NQ==
