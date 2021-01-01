@@ -9,16 +9,21 @@ const gravatarUrl = 'https://s.gravatar.com/avatar';
 // The size query. Our chat needs 60px images
 const query = 's=60';
 
-export default function (options = {}): Hook { // eslint-disable-line no-unused-vars
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export default function (options = {}): Hook {
+  // eslint-disable-line no-unused-vars
   return async (context: HookContext) => {
     // The user email
     const { email } = context.data;
     // Gravatar uses MD5 hashes from an email address (all lowercase) to get the image
-    const hash = crypto.createHash('md5').update(email.toLowerCase()).digest('hex');
+    const hash = crypto
+      .createHash('md5')
+      .update(email.toLowerCase())
+      .digest('hex');
 
     context.data.avatar = `${gravatarUrl}/${hash}?${query}`;
 
     // Best practice: hooks should always return the context
     return context;
   };
-};
+}

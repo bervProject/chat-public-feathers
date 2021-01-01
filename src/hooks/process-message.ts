@@ -2,10 +2,10 @@
 // For more information on hooks see: http://docs.feathersjs.com/api/hooks.html
 import { HookContext, Hook } from '@feathersjs/feathers';
 
-export default function (options = {}): Hook { // eslint-disable-line no-unused-vars
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export default function (options = {}): Hook {
   return async (context: HookContext) => {
     const { data } = context;
-
     // Throw an error if we didn't get a text
     if (!data.text) {
       throw new Error('A message must have a text');
@@ -13,6 +13,9 @@ export default function (options = {}): Hook { // eslint-disable-line no-unused-
 
     // The authenticated user
     const user = context.params.user;
+    if (!user) {
+      throw new Error('Must use authenticated user');
+    }
     // The actual message text
     const text = context.data.text
       // Messages can't be longer than 400 characters
@@ -24,10 +27,10 @@ export default function (options = {}): Hook { // eslint-disable-line no-unused-
       // Set the user id
       userId: user._id,
       // Add the current date
-      createdAt: new Date().getTime()
+      createdAt: new Date().getTime(),
     };
 
     // Best practice: hooks should always return the context
     return context;
   };
-};
+}

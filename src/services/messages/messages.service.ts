@@ -7,14 +7,15 @@ import hooks from './messages.hooks';
 
 declare module '../../declarations' {
   interface ServiceTypes {
-    'messages': Messages & ServiceAddons<any>;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    messages: Messages & ServiceAddons<any>;
   }
 }
 
-export default function (app: Application) {
+export default function (app: Application): void {
   const options = {
     Model: createModel(app),
-    paginate: app.get('paginate')
+    paginate: app.get('paginate'),
   };
 
   // Initialize our service with any options it requires
@@ -24,4 +25,4 @@ export default function (app: Application) {
   const service = app.service('messages');
 
   service.hooks(hooks);
-};
+}
