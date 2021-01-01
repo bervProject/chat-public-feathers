@@ -44,7 +44,7 @@
     "cors": "^2.8.5",
     "feathers-hooks-common": "^5.0.4",
     "feathers-nedb": "^5.1.0",
-    "helmet": "^4.2.0",
+    "helmet": "^4.3.1",
     "nedb": "^1.8.0",
     "serve-favicon": "^2.5.0",
     "typescript": "^4.1.2",
