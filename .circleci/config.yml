@@ -1,17 +1,18 @@
 version: 2.1
 orbs:
   node: circleci/node@4.2.0
-
+jobs:
+  coverage:
+    executor: node/default
+    steps:
+      - run:
+          name: Upload to codecov
+          command: bash <(curl -s https://codecov.io/bash)
 workflows:
   test:
     jobs:
       - node/test:
           pkg-manager: yarn
       - coverage:
-          executor: node/default
           requires:
             - node/test
-          steps:
-            - run:
-                name: Upload to codecov
-                command: bash <(curl -s https://codecov.io/bash)
