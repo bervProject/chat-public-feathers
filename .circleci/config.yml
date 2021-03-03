@@ -7,4 +7,6 @@ workflows:
     jobs:
       - node/test:
           pkg-manager: yarn
-
+      - run:
+          name: Upload to codecov
+          command: bash <(curl -s https://codecov.io/bash)
